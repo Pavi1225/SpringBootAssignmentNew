@@ -49,10 +49,11 @@
 	        for (int i = 1; i < worksheet.getPhysicalNumberOfRows(); i++) {
 	        	XSSFRow row = worksheet.getRow(i);
 	        	uploadModel=new UploadModel();
-	        	uploadModel.setEmployeeId((int)row.getCell(0).getNumericCellValue());
-	        	uploadModel.setEmployeeName(row.getCell(1).getStringCellValue());
-	        	uploadModel.setDepartment(row.getCell(2).getStringCellValue());
-	        	uploadModel.setMobile(row.getCell(3).getStringCellValue());
+			uploadModel.setId((int)row.getCell(0).getNumericCellValue());
+	        	uploadModel.setEmployeeId((int)row.getCell(1).getNumericCellValue());
+	        	uploadModel.setEmployeeName(row.getCell(2).getStringCellValue());
+	        	uploadModel.setDepartment(row.getCell(3).getStringCellValue());
+	        	uploadModel.setMobile(row.getCell(4).getStringCellValue());
 	        	employeeData.add(uploadModel);
 	        }
 	        session.setAttribute("employeeData", employeeData);
