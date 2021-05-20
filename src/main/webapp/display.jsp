@@ -19,14 +19,14 @@ table, th, td {
 <tr>
 <th>EmployeeId</th>
 <th>EmployeeName</th>
-<th>Department</th>
+<th>Technology</th>
 <th>Mobile</th>
 </tr>
   <c:forEach var="item" items="${employeeData}" >
     <tr>
       <td><c:out value="${item.employeeId}" /></td>
       <td><c:out value="${item.employeeName}" /></td>
-      <td><c:out value="${item.department}" /></td>
+      <td><c:out value="${item.technology}" /></td>
       <td><c:out value="${item.mobile}" /></td>
     </tr>
   </c:forEach>
