@@ -7,7 +7,7 @@
 	public class UploadModel {
 	private int employeeId;
 	private String employeeName;
-	private String department;
+	private String technology;
 	private String mobile;
 	public int getEmployeeId() {
 		return employeeId;
